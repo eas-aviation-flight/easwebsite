@@ -1,37 +1,33 @@
 {
-  "name": "Netlify-Express",
-  "version": "0.0.1",
-  "description": "Example of how to deploy an Express.js Netlify app.",
-  "main": "functions/server.js",
+  "name": "easwebsite",
+  "version": "1.0.0",
+  "description": "A sample Node.js app using Express 4",
+  "engines": {
+    "node": "20.x"
+  },
+  "main": "index.js",
   "scripts": {
-    "build": "netlify-lambda build express",
-    "start": "node server-local.js",
-    "pug": "node node_modules/pug-cli/index.js views/ --out ./"
+    "start": "node index.js",
+    "test": "node test.js"
+  },
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.15.2"
+  },
+  "devDependencies": {
+    "tape": "^5.7.4",
+    "express": "^4.16.3",
+    "ejs": "^3.1.9",
+    "netlify-lambda": "^2.0.16",
+    "serverless-http": "^1.6.0"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/king-melchizedek/Netlify-Express.git"
+    "url": "https://github.com/heroku/node-js-getting-started"
   },
   "keywords": [
-    "netlify",
-    "express.js"
+    "node",
+    "express"
   ],
-  "author": "Ethan Miller",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/king-melchizedek/Netlify-Express/issues"
-  },
-  "homepage": "https://github.com/king-melchizedek/Netlify-Express#readme",
-  "dependencies": {
-    "pug": "^2.0.4",
-    "pug-cli": "^1.0.0-alpha6"
-  },
-  "devDependencies": {
-    "body-parser": "^1.18.3",
-    "express": "^4.16.3",
-    "netlify-lambda": "^0.4.0",
-    "pug": "^2.0.4",
-    "pug-cli": "^1.0.0-alpha6",
-    "serverless-http": "^1.6.0"
-  }
+  "license": "MIT"
 }
