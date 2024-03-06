@@ -5,62 +5,383 @@
 </head>
 
 <body>
-
+  <div class="animationload">
+    <div class="loader">Loading...</div>
+  </div>
   <%- include ("../partials/nav.ejs") %>
 
-<div class="jumbotron text-center">
-  <div class="container">
-    <a href="/" class="lang-logo">
-      <img src="/lang-logo.png">
-    </a>
-    <h1>Getting Started on Heroku with Node.js</h1>
-    <p>This is a sample Node application deployed to Heroku. It's a reasonably simple app - but a good foundation for understanding how to get the most out of the Heroku platform.</p>
-    <a type="button" class="btn btn-lg btn-default" href="https://devcenter.heroku.com/articles/getting-started-with-nodejs"><span class="glyphicon glyphicon-flash"></span> Getting Started on Heroku with Node.js</a>
-    <a type="button" class="btn btn-lg btn-primary" href="https://github.com/heroku/node-js-getting-started"><span class="glyphicon glyphicon-download"></span> Source on GitHub</a>
-  </div>
-</div>
-<div class="container">
-  <div class="alert alert-info text-center" role="alert">
-    To deploy your own copy, and learn the fundamentals of the Heroku platform, head over to the <a href="https://devcenter.heroku.com/articles/getting-started-with-nodejs" class="alert-link">Getting Started on Heroku with Node.js</a> tutorial.
-  </div>
-  <hr>
-  <div class="row">
-    <div class="col-md-6">
-      <h3><span class="glyphicon glyphicon-info-sign"></span> How this sample app works</h3>
-      <ul>
-        <li>This app was deployed to Heroku, either using Git or by using <a href="https://github.com/heroku/node-js-getting-started">Heroku Button</a> on the repository.</li>
+    <section class="slider-wrapper">
+    
+        <div class="tp-banner-container">
+            <div class="tp-banner" >
+                <ul>
+                   <li data-transition="fade" data-slotamount="7" data-masterspeed="1500" >
+                        <img src="images/banners/bannerbg_03.png"  alt="slidebg1"  data-bgfit="cover" data-bgposition="left center" data-bgrepeat="no-repeat">
+                        <div class="tp-caption high_title customin customout start white-text"
+							data-x="left" data-hoffset="100"
+                            data-y="60"
+                            data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                            data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                            data-speed="1000"
+                            data-start="500"
+                            data-easing="Back.easeInOut"
+                            data-endspeed="300">OUR
+                        </div>
+                        <div class="tp-caption mini_title customin customout start"
+							data-x="left" data-hoffset="330"
+                            data-y="290"
+                            data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                            data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                            data-speed="1000"
+                            data-start="900"
+                            data-easing="Back.easeInOut"
+                            data-endspeed="300">PASSION BRINGS &nbsp;&nbsp;EAS
+                        </div>
+                        <div class="tp-caption customin customout"
+                            data-x="left" data-hoffset="100"
+                            data-y="150"
+                            data-customin="x:50;y:150;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.5;scaleY:0.5;skewX:0;skewY:0;opacity:0;transformPerspective:0;transformOrigin:50% 50%;"
+                            data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                            data-speed="800"
+                            data-start="700"
+                            data-easing="Power4.easeOut"
+                            data-endspeed="500"
+                            data-endeasing="Power4.easeIn"
+                            style="z-index: 3"><img src="demos/sliderlogo_01.png" alt="">
+                        </div>
+                        <div class="tp-caption small_title  customin customout start"
+							data-x="center" data-hoffset="0"
+                            data-y="330"
+                            data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                            data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                            data-speed="1600"
+                            data-start="1100"
+                            data-easing="Back.easeInOut"
+                            data-endspeed="300"><a href="mailto:sales@eas-aviation.com" class="btn btn-primary btn-lg">Contact Us</a>
+                        </div>
+                    </li>
+    
+                   <li data-transition="fade" data-slotamount="7" data-masterspeed="1500" >
+                        <img src="demos/sliderbg_05.jpg"  alt="slidebg1"  data-bgfit="cover" data-bgposition="left center" data-bgrepeat="no-repeat">
+                        <div class="tp-caption big_title upper_title customin customout start"
+                            data-x="right"
+                            data-hoffset="0"
+                            data-y="95"
+                            data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                            data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                            data-speed="1000"
+                            data-start="500"
+                            data-easing="Back.easeInOut"
+                            data-endspeed="300">EVEREST AERO SERVICES ( eas )
+                        </div>
+                        <div class="tp-caption mini_title2 customin customout"
+                            data-x="right"
+                            data-y="190"
+                            data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                            data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                            data-speed="1000"
+                            data-start="1000"
+                            data-easing="Back.easeInOut"
+                            data-endspeed="300"><i class="fa fa-star-o"></i> Quality Spares
+                        </div>
+                        <div class="tp-caption mini_title2 customin customout"
+                            data-x="right"
+                            data-y="220"
+                            data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                            data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                            data-speed="1000"
+                            data-start="1500"
+                            data-easing="Back.easeInOut"
+                            data-endspeed="300"><i class="fa fa-star-o"></i> Impeccable Service
+                        </div>
+                        <div class="tp-caption mini_title2 customin customout"
+                            data-x="right"
+                            data-y="250"
+                            data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                            data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                            data-speed="1000"
+                            data-start="2000"
+                            data-easing="Back.easeInOut"
+                            data-endspeed="300"><i class="fa fa-star-o"></i> Glocally !
+                        </div>
 
-        <li>When Heroku received the source code, it fetched all the dependencies in the <a href="https://github.com/heroku/node-js-getting-started/blob/main/package.json">package.json</a>, creating a deployable slug.</li>
-        <li>The platform then spins up a dyno, a lightweight container that provides an isolated environment in which the slug can be mounted and executed.</li>
-        <li>You can scale your app, manage it, and deploy over <a href="https://addons.heroku.com/">150 add-on services</a>, from the Dashboard or CLI.</li>
-      </ul>
-    </div>
-    <div class="col-md-6">
-      <h3><span class="glyphicon glyphicon-link"></span> Next Steps</h3>
-      <ul>
-        <li>If you are following the <a href="https://devcenter.heroku.com/articles/getting-started-with-nodejs">Getting Started</a> guide, then please head back to the tutorial and follow the next steps!</li>
-        <li>If you deployed this app by deploying the Heroku Button, then in a command line shell, run:</li>
-        <ul>
-          <li><code>git clone https://github.com/heroku/node-js-getting-started.git</code> - this will create a local copy of the source code for the app</li>
-          <li><code>cd node-js-getting-started</code> - change directory into the local source code repository</li>
-          <li><code>heroku git:remote -a &lt;your-app-name></code> - associate the Heroku app with the repository</li>
-          <li>You'll now be set up to run the app locally, or <a href="https://devcenter.heroku.com/articles/getting-started-with-nodejs#push-local-changes">deploy changes</a> to Heroku</li>
-        </ul>
-      </ul>
-      <h3><span class="glyphicon glyphicon-link"></span> Helpful Links</h3>
-      <ul>
-        <li><a href="https://www.heroku.com/home">Heroku</a></li>
-        <li><a href="https://devcenter.heroku.com/">Heroku Dev Center</a></li>
-        <li><a href="https://devcenter.heroku.com/articles/getting-started-with-nodejs">Getting Started on Heroku with Node.js</a></li>
-        <li><a href="https://devcenter.heroku.com/articles/deploying-nodejs">Deploying Node Apps on Heroku</a></li>
-      </ul>
-    </div>
-  </div> <!-- row -->
-   <div class="alert alert-info text-center" role="alert">
-    Please do work through the Getting Started guide, even if you do know how to build such an application.  The guide covers the basics of working with Heroku, and will familiarize you with all the concepts you need in order to build and deploy your own apps.
-  </div>
-</div>
+                        <div class="tp-caption customin customout"
+                            data-x="left" data-hoffset="-70"
+                            data-y="20"
+                            data-customin="x:50;y:150;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.5;scaleY:0.5;skewX:0;skewY:0;opacity:0;transformPerspective:0;transformOrigin:50% 50%;"
+                            data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                            data-speed="1800"
+                            data-start="1000"
+                            data-easing="Power4.easeOut"
+                            data-endspeed="500"
+                            data-endeasing="Power4.easeIn"
+                            style="z-index: 3"><img src="demos/plane-parts.png" alt="">
+                        </div>
+
+                    </li>
+
+                    <li data-transition="fade" data-slotamount="7" data-masterspeed="1500" >
+                        <img src="images/banners/plane.jpg"  alt="slidebg1"  data-bgfit="cover" data-bgposition="left center" data-bgrepeat="no-repeat">
+                        <div class="tp-caption big_title  customin customout start white-text"
+                            data-x="left"
+                            data-hoffset="30"
+                            data-y="170"
+                            data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                            data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                            data-speed="1000"
+                            data-start="500"
+                            data-easing="Back.easeInOut"
+                            data-endspeed="300">Everest Aero Services Private Limited 
+                        </div>
+                        <div class="tp-caption mini_title2 customin customout start white-text"
+                            data-x="left"
+                            data-hoffset="30"
+                            data-y="236"
+                            data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                            data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                            data-speed="1300"
+                            data-start="800"
+                            data-easing="Back.easeInOut"
+                            data-endspeed="300">EAS is a partner for your total aircraft spares and aviation service needs.<br>
+                             We strive to abide by our slogan<br> - "providing quality spares wrapped in an impeccable service!"<br>
+                        </div>
+                        <div class="tp-caption small_title  customin customout start"
+                            data-x="left"
+                            data-hoffset="30"
+                            data-y="350"
+                            data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                            data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                            data-speed="1600"
+                            data-start="1100"
+                            data-easing="Back.easeInOut"
+                            data-endspeed="300"><a href="mailto:sales@eas-aviation.com" class="btn btn-primary btn-lg">Contact now</a>
+                        </div>
+
+                    </li>
+                </ul>
+                <div class="tp-bannertimer"></div>
+            </div>
+        </div>
+        
+    </section><!-- end slider-wrapper -->
+    
+	<section class="white-wrapper">
+    	<div class="container">
+        	<div class="messagebox">
+            	<h2>(EAS) is a partner for your total aircraft spares and aviation service needs.</h2>
+                <p class="lead">
+                    We strive to abide by our slogan- "providing quality spares wrapped in an impeccable service!"
+                </p>
+                 
+                <p class="lead">
+                    Everest Aero Services Private Limited (EAS) is a leading and independent specialist in the supply of aircraft spare parts and aviation services, with a wide presence in the global aviation domain. 
+                    With customer centric approach at its core, all our activities are focused on providing airlines with certified airplane parts when requirement occurs. 
+                    We also have a good understanding of what it takes for an airliner to fly their airplanes while maintaining optimum level of spare 
+                    parts – and that is where we stand out, by maintaining pool of inventories with our partners worldwide.
+                </p>
+                <a class="btn btn-dark btn-lg" href="#">Phone: +977 9818645104</a>
+            </div><!-- end messagebox -->
+		</div><!-- end container -->
+    </section><!-- end white-wrapper -->
+    
+	<section class="grey-wrapper jt-shadow" id="products">
+    	<div class="container">
+        	<div class="general-title">
+            	<h2>Products & Services</h2>
+                <hr>
+                <p class="lead">We provide best solution for your needs</p>
+            </div><!-- end general title -->
+            
+            <div class="services-one padding-top text-center">
+            	<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 first">
+                	<div class="servicebox">
+                    	<a href="#">
+                    	<div class="service-icon-circle">
+                        	<i class="fa fa-lightbulb-o"></i>
+                        </div><!-- end service icon -->
+                        </a>
+                    	<div class="title">
+                        	<h3>Aircraft Materials/Spare Parts</h3>
+                        </div><!-- end title -->
+                        <p>
+                            EAS focuses on the aftermarket service of supplying our airline partners and other customers with their aircraft spares needs.
+                            We have completed multiple aircraft dismantling projects and have in shelf the spares  and components
+                        </p>
+                	</div><!-- end servicebox -->
+                </div><!-- end col-lg-3 -->
+
+            	<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                	<div class="servicebox">
+                    	<a href="#">
+                    	<div class="service-icon-circle active">
+                        	<i class="fa fa-external-link"></i>
+                        </div><!-- end service icon -->
+                        </a>
+                    	<div class="title">
+                        	<h3>Aircraft Engines</h3>
+                        </div><!-- end title -->
+                        <p>
+                           EAS can support its clients with the following Engine Models and materials for <a class="" href="#">Engines</a>.
+                           we are equally capable of sourcing other engine models should requirement arise.
+                        </p>
+                	</div><!-- end servicebox -->
+                </div><!-- end col-lg-3 -->
+                
+            	<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                	<div class="servicebox">
+                    	<a href="#">
+                    	<div class="service-icon-circle">
+                        	<i class="fa fa-tablet"></i>
+                        </div><!-- end service icon -->
+                        </a>
+                    	<div class="title">
+                        	<h3>Aircraft Propellers</h3>
+                        </div><!-- end title -->
+                        <p>
+                            Cessna Grand Caravan
+                        </p>
+                	</div><!-- end servicebox -->
+                </div><!-- end col-lg-3 -->
+                
+            	<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 last">
+                	<div class="servicebox">
+                    	<a href="#">
+                    	<div class="service-icon-circle">
+                        	<i class="fa fa-microphone"></i>
+                        </div><!-- end service icon -->
+                        </a>
+                    	<div class="title">
+                        	<h3>Aircraft Services</h3>
+                        </div><!-- end title -->
+                        <p>
+                            Everest Aero Services provides turnkey solutions to its customers in the area of spares repair management and aviation audits.
+                             Our exclusive arrangements with repair shops help us cater to airliners in managing the repairs of unserviceable parts. 
+                             Additionally, EAS is equally capable of conducting pre-purchase, mid-term lease, 
+                            annual and pre-delivery physical and desktop audits/inspection of aircraft for its owner, operator and lesssor clients.
+                        </p>
+                	</div><!-- end servicebox -->
+                </div><!-- end col-lg-3 -->
+            </div><!-- end services one -->
+		</div><!-- end container -->
+    </section><!-- end grey-wrapper -->
+
+	<section class="white-wrapper">
+    	<div class="container">
+        	<div class="general-title">
+            	<h2>Projects</h2>
+                <hr>
+            </div><!-- end general title -->
+		</div><!-- end container -->
+
+		<div class="portfolio_wrapper padding-top">
+			<div class="portfolio_item">
+				<div class="entry">
+					<img src="demos/portfolio_01.jpg" alt="" class="img-responsive">
+					<div class="magnifier">
+						<div class="buttons">
+							<a class="st btn btn-default" rel="bookmark" href="portfolio-single-sidebar.html">View project</a>
+                            <h3>ATR 72-500 Teardown ( 2023 ) - in Chennai, India</h3>
+						</div><!-- end buttons -->
+					</div><!-- end magnifier -->
+				</div><!-- end entry -->
+			</div><!-- end portfolio_item -->
+
+			<div class="portfolio_item">
+				<div class="entry">
+					<img src="demos/portfolio_02.jpg" alt="" class="img-responsive">
+					<div class="magnifier">
+						<div class="buttons">
+							<a class="st btn btn-default" rel="bookmark" href="portfolio-single-sidebar.html">View project</a>
+                            <h3>Dornier 228 Teardown ( 2022 ) - in Calcutta</h3>
+						</div><!-- end buttons -->
+					</div><!-- end magnifier -->
+				</div><!-- end entry -->
+			</div><!-- end portfolio_item -->
+            
+			<div class="portfolio_item">
+				<div class="entry">
+					<img src="demos/portfolio_03.jpg" alt="" class="img-responsive">
+					<div class="magnifier">
+						<div class="buttons">
+							<a class="st btn btn-default" rel="bookmark" href="portfolio-single-sidebar.html">View project</a>
+                            <h3>Boeing 757 Teardown ( 2019 ) - in Kathmandu</h3>
+						</div><!-- end buttons -->
+					</div><!-- end magnifier -->
+				</div><!-- end entry -->
+			</div><!-- end portfolio_item -->
+            
+			<div class="portfolio_item">
+				<div class="entry">
+					<img src="demos/portfolio_04.jpg" alt="" class="img-responsive">
+					<div class="magnifier">
+						<div class="buttons">
+							<a class="st btn btn-default" rel="bookmark" href="portfolio-single-sidebar.html">View project</a>
+                            <h3>Jetstream 41 Teardown ( 2018 ) - in Kathmandu</h3>
+						</div><!-- end buttons -->
+					</div><!-- end magnifier -->
+				</div><!-- end entry -->
+			</div><!-- end portfolio_item -->
+		</div><!-- portfolio_wrapper -->
+		<div class="clearfix"></div>
+            
+		<div class="buttons padding-top text-center">
+			<a href="portfolio-masonry.html" class="btn btn-primary btn-lg" title="">View All Projects</a>
+		</div>
+    </section><!-- end white-wrapper -->
+    
+	<section class="grey-wrapper jt-shadow">
+    	<div class="container">
+        	<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            	<div class="widget">
+					<div class="laptopBg">
+						<img alt="" src="images/laptop.png" class="imgBg img-responsive">
+						<div id="slider-in-laptop" class="royalSlider rsDefaultInv">
+                            <img alt="" src="demos/laptop_01.jpg">
+                            <img alt="" src="demos/laptop_01.jpg">
+                            <img alt="" src="demos/laptop_01.jpg">
+						</div>
+					</div><!-- end laptopBg -->
+                </div><!-- end widget -->
+            </div><!-- end col-lg-6 -->
+
+        	<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            	<div class="widget">
+                	<h3>Supported Aircraft Platforms</h3>
+                    <p>
+                        We love Turboprops and CRJs! With a focus on regional and small planes, 
+                        EAS is currently providing support ( spares & services ) on the below mentioned aircraft types:
+                    </p>
+                    <div class="clearfix"></div>
+                    <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 first">
+                    	<ul class="check">
+                            <li>ATR 42/72</li>
+                            <li>JETSTREAM 41</li>
+                            <li>DORNIER 228</li>
+                        </ul><!-- end check -->
+                    </div><!-- end col-lg-4 -->
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    	<ul class="check">
+                            <li>TWIN OTTER</li>
+                            <li>BEECHCRAFT C90/350i</li>
+                            <li>PILATUS PC-6/7</li>
+                        </ul><!-- end check -->    
+                    </div><!-- end col-lg-4 -->
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 last">
+                    	<ul class="check">
+                            <li>CESSNA GRAND CARAVAN</li>
+                            <li>SAAB 340</li>
+                            <li>CRJ 100/200</li>
+                        </ul><!-- end check -->
+                    </div><!-- end col-lg-4 --> 
+                    </div><!-- end row -->      
+                </div><!-- end widget -->
+            </div><!-- end col-lg-6 -->
+            
+		</div><!-- end container -->
+    </section><!-- end grey-wrapper -->
 
 
+  <%- include ("../partials/footer.ejs") %>
 </body>
 </html>
